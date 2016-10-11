@@ -21,9 +21,8 @@ import org.jboss.logging.Logger;
 @LocalBean
 public class MailSenderBean {
 
-    /**
-     * Default constructor. 
-     */
+	private static final Logger logger = Logger.getLogger(MailSenderBean.class);
+	
     public MailSenderBean() {
         // TODO Auto-generated constructor stub
     }
@@ -60,7 +59,8 @@ public class MailSenderBean {
 			
 		} catch (Exception ex) {
 			
-			//Logger.getLogger(MailSenderBean.class.getName()).log(Level.SEVERE, null, ex);
+			//Logger.getLogger(MailSenderBean.class.getName()).log(Level.SEVERE, null,ex );
+			Logger.getLogger(MailSenderBean.class.getName());
 			ex.printStackTrace();
 		}
     	
